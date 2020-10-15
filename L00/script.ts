@@ -8,6 +8,5 @@ namespace L00 {
         if (name == "Name")
             name = "Unbekannter";
         document.getElementsByTagName("body")[0].innerText = "Viel Erfolg bei Eia2, " + name + "!";
-        //hello world
     }
 }
