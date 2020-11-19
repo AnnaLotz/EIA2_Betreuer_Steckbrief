@@ -1,0 +1,19 @@
+{
+  "name": "eia2_betreuer_steckbrief",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node Relativer/Pfad/Zu/Server/Datei.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaLotz/EIA2_Betreuer_Steckbrief.git"
+  },
+  "author": "anna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaLotz/EIA2_Betreuer_Steckbrief/issues"
+  },
+  "homepage": "https://github.com/AnnaLotz/EIA2_Betreuer_Steckbrief#readme"
+}
