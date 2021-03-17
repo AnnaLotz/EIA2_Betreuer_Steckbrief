@@ -1,14 +1,13 @@
-namespace Boxes {
-
+"use strict";
+var Boxes;
+(function (Boxes) {
     document.addEventListener("DOMContentLoaded", init);
-
-    let n: number = 5;
-    let color: string;
-    let x: number = 0;
-    let y: number = 0;
-
-    function init(): void {
-        for (let i: number = 0; i < n; i++) {
+    let n = 5;
+    let color;
+    let x = 0;
+    let y = 0;
+    function init() {
+        for (let i = 0; i < n; i++) {
             y += (i == 2) ? 20 : 50;
             x = (x + 170) % 400;
             switch (i) {
@@ -24,7 +23,6 @@ namespace Boxes {
                 default:
                     color = "#0000ff";
             }
-
             for (let size of ["big", "medium", "small"]) {
                 createBox(color, x, y, size);
                 if (i == 4)
@@ -32,13 +30,13 @@ namespace Boxes {
             }
         }
     }
-
-    function createBox(_color: string, _x: number, _y: number, _size: string): void {
-        let div: HTMLDivElement = document.createElement("div");
+    function createBox(_color, _x, _y, _size) {
+        let div = document.createElement("div");
         document.body.appendChild(div);
         div.classList.add(_size);
         div.style.backgroundColor = _color;
         div.style.left = _x + "px";
-        div.style.top = _y + "px";        
+        div.style.top = _y + "px";
     }
-}
+})(Boxes || (Boxes = {}));
+//# sourceMappingURL=boxes.js.map
