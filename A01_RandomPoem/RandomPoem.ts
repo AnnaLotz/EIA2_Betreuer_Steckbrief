@@ -19,9 +19,9 @@ namespace RandomPoem {
         let randNum: number = Math.floor(Math.random() * _subjekte.length);
         // console.log(randNum);
         verse += _subjekte.splice(randNum, 1) + " ";
-        randNum = Math.floor(Math.random() * _subjekte.length);
+        randNum = Math.floor(Math.random() * _prädikate.length);
         verse += _prädikate.splice(randNum, 1) + " ";
-        randNum = Math.floor(Math.random() * _subjekte.length);
+        randNum = Math.floor(Math.random() * _objekte.length);
         verse += _objekte.splice(randNum, 1) + ".";
 
         return verse;
